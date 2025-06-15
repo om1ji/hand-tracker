@@ -7,28 +7,28 @@
 
 An interactive augmented reality system that allows real-time control of 3D objects using hand gestures through a laptop camera. The project is developed using computer vision and machine learning technologies.
 
-## 🎯 Features
+## Features
 
-### 🎮 Interactive Gesture Control
+### Gesture Control
 - **Object Movement** - using index finger
 - **Size Adjustment** - with "zoom" gesture (thumb + index finger)
 - **3D Rotation** - with open palm and control across all axes
 - **Object Switching** - with peace sign ✌️ (thumb + index + middle finger)
 
 
-### 📦 3D Model Support
+### 3D Model Support
 - **Custom models**: automatic loading of .obj files from `models/` folder
 - **OBJ format**: full support for vertices, faces, and normals
 - **Automatic normalization**: scaling models to standard size
 - **Triangulation**: automatic breakdown of complex polygons into triangles
 
-### ⏱️ Activation Delay System
+### Activation Delay System
 - **1-second delay** to prevent accidental gesture activation
 - **Visual progress bar** shows activation process
 - **Status indicators**: [WAITING] / [ACTIVE]
 - **Smooth transitions** between control modes
 
-## 🛠️ Technologies
+## Technologies
 
 - **Python 3.7+**
 - **OpenCV** - computer vision and image processing
@@ -36,7 +36,7 @@ An interactive augmented reality system that allows real-time control of 3D obje
 - **NumPy** - mathematical calculations for 3D transformations
 - **Custom OBJ loader** - 3D model parsing
 
-## 📋 Installation
+## Installation
 
 ### Requirements
 - Python 3.7 or higher
@@ -67,9 +67,7 @@ pip3 install -r requirements.txt
 python3 interactive_ar_hand.py
 ```
 
-## 🎮 Controls
-
-### Hand Gestures (hold for 1 second to activate):
+## Hand Gestures (hold for 1 second to activate):
 
 | Gesture | Description | Function |
 |---------|-------------|----------|
@@ -99,7 +97,7 @@ interactive-ar-hand-tracker/
 └── README.md               # This file
 ```
 
-## 🎨 Adding Custom 3D Models
+## Adding Custom 3D Models
 
 1. **Export model from Blender to .obj format:**
    - File → Export → Wavefront (.obj)
@@ -110,13 +108,8 @@ interactive-ar-hand-tracker/
 
 3. **Restart the program** - model will load automatically
 
-### Supported formats:
-- ✅ Vertices
-- ✅ Faces - automatic triangulation
-- ✅ Normals
-- ✅ Complex geometry (hundreds/thousands of polygons)
 
-## 🔧 Configuration
+## Configuration
 
 ### Code parameters:
 - `gesture_activation_delay` - gesture activation delay time (default: 15 frames ≈ 1 sec)
@@ -124,13 +117,8 @@ interactive-ar-hand-tracker/
 - `camera_distance` - camera distance from object (default: 400)
 - Rotation sensitivity for each axis
 
-### Camera requirements:
-- Resolution: 1280x720 (set automatically)
-- Good lighting for accurate hand recognition
-- Distance from camera: 30-100 cm
 
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Gesture recognition issues:
 - Ensure good lighting (!!!)
@@ -138,7 +126,7 @@ interactive-ar-hand-tracker/
 - Avoid complex background behind hand
 
 
-## 📊 Technical Specifications
+## Technical Specifications
 
 - **Frame rate**: up to 15 FPS (hardware dependent)
 - **Detection accuracy**: 21 hand keypoints (MediaPipe)
